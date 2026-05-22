@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Sync Solutions — Credenciamento Médico Digital</title>
+    <meta name="description"
+        content="A Health Sync Solutions digitaliza e fortalece o processo de credenciamento médico, reduzindo burocracia e aumentando a confiabilidade para instituições de saúde.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="LogoHealth.png" alt="Health Sync Solutions Logo" class="logo">
+            </a>
+            <nav class="nav-links">
+                <a href="#solucao">A Solução</a>
+                <a href="#governanca">Governança</a>
+                <a href="#roi">Simulador de ROI</a>
+            </nav>
+            <a href="#contato" class="btn btn-primary">Solicitar Diagnóstico</a>
+            <div class="hamburger" id="hamburger-menu" aria-label="Abrir menu" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg" style="background-image: url('heroHSS.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Sincronia Hospital & Corpo Clínico</div>
+                <h1 class="hero-title">
+                    Hospitais levam até 6 meses para credenciar 1 médico. <br>
+                    A HSS <span class="highlight">resolve em dias.</span>
+                </h1>
+                <p class="hero-subtitle">Com mais de 55% da receita hospitalar atrelada a convênios, cada credenciamento atrasado representa procedimentos represados e faturamento perdido. A HSS automatiza, centraliza e audita todo o processo.</p>
+                <div class="hero-actions">
+                    <a href="#contato" class="btn btn-primary btn-large">Inicie a Transformação</a>
+                    <a href="#solucao" class="btn btn-secondary btn-large">Descubra o Fluxo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema Real Stat Bar -->
+    <section class="statbar section" style="padding: 0; background: #F1F5F9; border-bottom: 1px solid #E2E8F0;">
+        <div class="container" style="padding: 0 24px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 24px; max-width: 900px; margin: 0 auto; padding: 32px 0;">
+                <div style="flex:1; text-align: center;">
+                    <div style="font-size: 2.1rem; font-weight: 600; color: #0284C7;">51 milhões</div>
+                    <div style="font-size: 0.98rem; color: #475569; margin-top: 4px;">de brasileiros dependem de planos de saúde (ANS, 2024)</div>
+                </div>
+                <div style="width: 1px; background: #E2E8F0; height: 40px;"></div>
+                <div style="flex:1; text-align: center;">
+                    <div style="font-size: 2.1rem; font-weight: 600; color: #0284C7;">90–180 dias</div>
+                    <div style="font-size: 0.98rem; color: #475569; margin-top: 4px;">duração média de um credenciamento manual</div>
+                </div>
+                <div style="width: 1px; background: #E2E8F0; height: 40px;"></div>
+                <div style="flex:1; text-align: center;">
+                    <div style="font-size: 2.1rem; font-weight: 600; color: #0284C7;">55%</div>
+                    <div style="font-size: 0.98rem; color: #475569; margin-top: 4px;">das receitas hospitalares vêm de convênios</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Setor / Desperdício -->
+    <section class="stats section" id="stats">
+        <div class="container">
+            <div class="section-header">
+                <h2>O custo invisível do credenciamento analógico</h2>
+                <p>O modelo analógico consome recursos valiosos e expõe instituições a riscos.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card clean-card">
+                    <div class="stat-icon"><ion-icon name="time-outline"></ion-icon></div>
+                    <h3>90 a 180 dias perdidos</h3>
+                    <p>Tempo real de um credenciamento manual no Brasil — coleta de CRM, CNES, alvarás, certidões, apólices, tudo por e-mail e planilha. Qualquer inconsistência reinicia o processo.</p>
+                </div>
+                <div class="vs-card">VS</div>
+                <div class="stat-card clean-card highlight-card">
+                    <div class="stat-icon"><ion-icon name="flash-outline"></ion-icon></div>
+                    <h3>Dossiê completo em 72h</h3>
+                    <p>A HSS centraliza o upload, valida documentos automaticamente e entrega um dossiê auditável para a diretoria aprovar — sem intermediários, sem retrabalho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solução: Credenciamento 360 -->
+    <section class="solution section" id="solucao">
+        <div class="container">
+            <div class="section-header">
+                <h2>Credenciamento 360°</h2>
+                <p>Três etapas. Zero intermediários. Dossiê auditável desde o primeiro upload.</p>
+            </div>
+            <div class="flow-grid">
+                <div class="flow-card clean-card">
+                    <div class="flow-card-top">
+                        <div class="step-badge">1</div>
+                        <div class="step-icon"><ion-icon name="cloud-upload-outline"></ion-icon></div>
+                    </div>
+                    <h4>Upload pelo Médico</h4>
+                    <p>O profissional envia seus documentos por um portal seguro e intuitivo, sem intermediários.</p>
+                </div>
+                <div class="flow-connector"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+                <div class="flow-card clean-card">
+                    <div class="flow-card-top">
+                        <div class="step-badge">2</div>
+                        <div class="step-icon"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+                    </div>
+                    <h4>Validação Inteligente</h4>
+                    <p>A plataforma verifica a autenticidade dos dados e estrutura as informações automaticamente.</p>
+                </div>
+                <div class="flow-connector"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+                <div class="flow-card clean-card">
+                    <div class="flow-card-top">
+                        <div class="step-badge">3</div>
+                        <div class="step-icon"><ion-icon name="clipboard-outline"></ion-icon></div>
+                    </div>
+                    <h4>Aprovação Simplificada</h4>
+                    <p>Decisão ágil da diretoria baseada em um dossiê digital organizado e auditável.</p>
+                </div>
+            </div>
+            <!-- Competitive Differentiator Line -->
+            <div style="margin-top: 32px;">
+                <div style="background: #E0F2FE; color: #0284C7; border-radius: 6px; padding: 16px 24px; font-size: 1.05rem; font-weight: 500; max-width: 900px; margin: 0 auto; box-shadow: 0 2px 8px rgba(2,132,199,0.04);">
+                    A maioria dos hospitais brasileiros ainda trata o credenciamento como burocracia. A HSS transforma em governança — com trilha de auditoria compatível com ONA e LGPD.
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilares de Governança -->
+    <section class="features section" id="governanca">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pilares de Governança e Segurança</h2>
+                <p>Arquitetura desenhada para garantir total conformidade e mitigação de riscos estruturais.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card clean-card">
+                    <div class="stat-icon"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+                    <h4>Auditoria Full-Time (LGPD)</h4>
+                    <p>Trilhas de auditoria imutáveis e proteção de dados rigorosa em conformidade com as exigências da
+                        LGPD.</p>
+                </div>
+                <div class="feature-card clean-card">
+                    <div class="stat-icon"><ion-icon name="id-card-outline"></ion-icon></div>
+                    <h4>Verificação de Conformidade</h4>
+                    <p>Consulta facilitada e gestão inteligente para manter os registros profissionais atualizados.</p>
+                </div>
+                <div class="feature-card clean-card">
+                    <div class="stat-icon"><ion-icon name="calendar-outline"></ion-icon></div>
+                    <h4>Painel de Vencimentos</h4>
+                    <p>Alertas preditivos sobre expiração de certidões, apólices e alvarás operacionais do corpo
+                        clínico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulador de Economia -->
+    <section class="roi section" id="roi">
+        <div class="container">
+            <div class="roi-wrapper">
+                <div class="roi-content">
+                    <h2>Quanto custa não ter o HSS?</h2>
+                    <p>Reduza em até <strong>70%</strong> o tempo de integração de novos médicos, liberando sua equipe para tarefas estratégicas.</p>
+                    <ul class="roi-benefits">
+                        <li><ion-icon name="checkmark-outline"></ion-icon> Redução drástica de custos operacionais</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon> Mitigação de riscos e passivos documentais</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon> Aceleração do processo de admissão médica</li>
+                    </ul>
+                </div>
+                <div class="roi-calculator clean-card">
+                    <h3>Simulador de Economia</h3>
+                    <div class="calc-group">
+                        <label for="num-medicos">Volume de Credenciamentos / Mês</label>
+                        <input type="range" id="num-medicos" min="10" max="200" value="50">
+                        <span class="range-value" id="medicos-val">50 médicos</span>
+                    </div>
+                    <div class="calc-result">
+                        <span>Horas salvas/mês:</span>
+                        <h4 id="horas-val">200h</h4>
+                    </div>
+                    <div class="calc-result">
+                        <span>Economia operacional/mês (R$):</span>
+                        <h4 id="economia-val">R$ 5.000</h4>
+                    </div>
+                    <div class="calc-result">
+                        <span>Payback estimado:</span>
+                        <h4 id="payback-val">Positivo no 2º mês</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecossistema Integrado -->
+    <section class="ecosystem section" id="integracao">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ecossistema Integrado</h2>
+                <p>A HSS funciona em harmonia com os processos já existentes na sua instituição de saúde.</p>
+            </div>
+            <div class="ecosystem-visual clean-card">
+                <div class="eco-brand">
+                    <img src="LogoHealth.png" alt="HSS">
+                </div>
+                <div class="eco-divider">
+                    <ion-icon name="swap-horizontal-outline"></ion-icon>
+                </div>
+                <div class="eco-nodes">
+                    <div class="eco-node"><ion-icon name="people-outline"></ion-icon> Recursos Humanos</div>
+                    <div class="eco-node"><ion-icon name="medkit-outline"></ion-icon> Diretoria Técnica</div>
+                    <div class="eco-node"><ion-icon name="cash-outline"></ion-icon> Faturamento</div>
+                    <div class="eco-node"><ion-icon name="ribbon-outline"></ion-icon> Acreditação</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Form -->
+    <section class="cta-section section" id="contato">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-info">
+                    <h2>Cada mês sem a HSS é um mês com credenciamentos represados.</h2>
+                    <p>Agende uma demonstração executiva e descubra na prática como a Health Sync Solutions pode
+                        modernizar a sua gestão hospitalar.</p>
+                </div>
+                <form class="cta-form">
+                    <input type="text" placeholder="Nome Completo" required>
+                    <input type="email" placeholder="E-mail Corporativo" required>
+                    <input type="text" placeholder="Instituição de Saúde" required>
+                    <select required>
+                        <option value="" disabled selected>Nº Aproximado de Médicos na Rede</option>
+                        <option value="1-50">Até 50</option>
+                        <option value="51-200">51 a 200</option>
+                        <option value="201-500">201 a 500</option>
+                        <option value="500+">Mais de 500</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary btn-block" style="background: #0284C7;">Solicitar
+                        Diagnóstico</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="LogoHealth.png" alt="Health Sync Solutions" class="footer-logo-img">
+                    <p>Conectando excelência médica e governança hospitalar.</p>
+                    <div class="footer-social">
+                        <h4>Rede Social</h4>
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Plataforma</h4>
+                    <a href="#">Solução</a>
+                    <a href="#">Para Instituições</a>
+                    <a href="#">Para Médicos</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <a href="#">Sobre</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Investidores</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <a href="mailto:contato@syncidsolutions.com">contato@syncidsolutions.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Health Sync Solutions. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

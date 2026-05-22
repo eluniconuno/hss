@@ -1,0 +1,6 @@
+/* Arquivo de configuração para deploy estático (exemplo para Vercel, Netlify ou similar) */
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
