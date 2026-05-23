@@ -36,7 +36,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="hero-bg" style="background-image: url('heroHSS.png');"></div>
+        <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
@@ -243,18 +243,19 @@
                         modernizar a sua gestão hospitalar.</p>
                 </div>
                 <form class="cta-form">
-                    <input type="text" placeholder="Nome Completo" required>
-                    <input type="email" placeholder="E-mail Corporativo" required>
-                    <input type="text" placeholder="Instituição de Saúde" required>
-                    <select required>
-                        <option value="" disabled selected>Nº Aproximado de Médicos na Rede</option>
-                        <option value="1-50">Até 50</option>
-                        <option value="51-200">51 a 200</option>
-                        <option value="201-500">201 a 500</option>
-                        <option value="500+">Mais de 500</option>
-                    </select>
-                    <button type="submit" class="btn btn-primary btn-block" style="background: #0284C7;">Solicitar
-                        Diagnóstico</button>
+                    <form class="cta-form" name="contato" method="POST" data-netlify="true">
+                        <input type="text" name="nome" placeholder="Nome Completo" required>
+                        <input type="email" name="email" placeholder="E-mail Corporativo" required>
+                        <input type="text" name="instituicao" placeholder="Instituição de Saúde" required>
+                        <select name="num-medicos" required>
+                            <option value="" disabled selected>Nº Aproximado de Médicos na Rede</option>
+                            <option value="1-50">Até 50</option>
+                            <option value="51-200">51 a 200</option>
+                            <option value="201-500">201 a 500</option>
+                            <option value="500+">Mais de 500</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary btn-block" style="background: #0284C7;">Solicitar Diagnóstico</button>
+                    </form>
                 </form>
             </div>
         </div>

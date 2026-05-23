@@ -64,20 +64,29 @@ h1, h2, h3, h4 {
 .btn-primary {
     background: var(--accent-dark);
     color: #FFFFFF;
+    transition: background 0.2s, box-shadow 0.2s, color 0.2s, filter 0.2s;
 }
 
 .btn-primary:hover {
-    background: #1E293B;
+    background: #0284C7;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(2,132,199,0.18);
+    filter: brightness(1.08);
 }
 
 .btn-secondary {
     background: transparent;
     color: var(--text-primary);
     border: 1px solid var(--border-light);
+    transition: background 0.2s, color 0.2s, border 0.2s, filter 0.2s;
 }
 
 .btn-secondary:hover {
-    border-color: var(--text-secondary);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    background: rgba(2,132,199,0.13);
+    box-shadow: 0 2px 12px rgba(2,132,199,0.10);
+    filter: brightness(1.08);
 }
 
 .btn-large {
@@ -122,8 +131,11 @@ h1, h2, h3, h4 {
     text-decoration: none;
     margin: 0 24px;
     font-size: 1rem;
-    transition: var(--transition);
+    transition: color 0.2s, background 0.2s, box-shadow 0.2s;
     font-weight: 400;
+    border-radius: 4px;
+    padding: 6px 12px;
+    position: relative;
 }
 .nav-links {
     flex: 1;
@@ -168,7 +180,10 @@ h1, h2, h3, h4 {
 }
 
 .nav-links a:hover {
-    color: var(--text-primary);
+    color: var(--accent-primary);
+    background: rgba(2, 132, 199, 0.10);
+    box-shadow: 0 2px 8px rgba(2,132,199,0.10);
+    text-decoration: none;
 }
 
 /* Sections */
@@ -783,12 +798,7 @@ footer {
     .nav-links { display: none; }
     .hero-actions { flex-direction: column; }
     .nav-container .btn.btn-primary {
-        font-size: 0.97rem;
-        padding: 8px 14px;
-        min-width: unset;
-        height: 38px;
-        border-radius: 5px;
-        margin-right: 48px;
+        display: none !important;
     }
     .footer-grid {
         grid-template-columns: 1fr;
@@ -831,6 +841,8 @@ footer {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+        margin-left: auto;
+        margin-right: 0;
     }
     .nav-links {
         display: none;
